@@ -56,9 +56,9 @@
     _normalHighlightOrSelectTintColor = _normalTintColor;
     _disableTintColor = [[UIColor blackColor] colorWithAlphaComponent:0.3f];
     
-    [self setTitleColor:_normalTintColor forState:UIControlStateNormal];
-    [self setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
-    [self setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+    [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self setTitleColor:_disableTintColor forState:UIControlStateHighlighted];
+    [self setTitleColor:_disableTintColor forState:UIControlStateSelected];
     [self setTitleColor:_disableTintColor forState:UIControlStateDisabled];
     
     [self updateBorderColor];
@@ -102,7 +102,7 @@
             [self fadeHighlightOrSelectColor];
         }
     } else {
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = _disableTintColor;
         self.layer.borderColor = [_disableTintColor CGColor];
     }
 }

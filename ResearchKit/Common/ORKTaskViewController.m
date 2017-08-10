@@ -980,6 +980,7 @@ static NSString *const _ChildNavigationControllerRestorationKey = @"childNavigat
         
         strongSelf->_hasSetProgressLabel = (progressLabel != nil);
         
+        strongSelf.pageViewController.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"grappa-logo-v2"]];
         // Collect toolbarItems
         [strongSelf collectToolbarItemsFromViewController:viewController];
     }];

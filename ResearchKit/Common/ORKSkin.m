@@ -76,7 +76,7 @@ static NSMutableDictionary *colors() {
     dispatch_once(&onceToken, ^{
         colors = [@{
                     ORKSignatureColorKey: ORKRGB(0x000000),
-                    ORKBackgroundColorKey: ORKRGB(0x8B4F98),
+                    ORKBackgroundColorKey: ORKRGB(0xffffff),
                     ORKToolBarTintColorKey: ORKRGB(0xffffff),
                     ORKLightTintColorKey: ORKRGB(0xeeeeee),
                     ORKDarkTintColorKey: ORKRGB(0x888888),
