@@ -85,7 +85,7 @@
 - (void)fadeHighlightOrSelectColor {
     // Ignore if it's a race condition
     if (self.enabled && !(self.highlighted || self.selected)) {
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = _normalTintColor;
         self.layer.borderColor = [_normalTintColor CGColor];
     }
 }
